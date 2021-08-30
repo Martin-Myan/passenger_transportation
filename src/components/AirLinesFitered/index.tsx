@@ -1,4 +1,4 @@
-import React, { SetStateAction } from "react";
+import React, { SetStateAction, FC } from "react";
 
 import styles from "./AirLinesFitered.module.scss";
 
@@ -10,13 +10,13 @@ interface AirLinesFiteredProp {
   setActiveIndex: React.Dispatch<SetStateAction<number>>;
 }
 
-const AirLinesFitered = ({
+const AirLinesFitered: FC<AirLinesFiteredProp> = ({
   oneOption,
   twoOption,
   threeOption,
   activeIndex,
   setActiveIndex,
-}: AirLinesFiteredProp) => {
+}) => {
   const activeIndexHandler = (index: number) => {
     setActiveIndex(index);
   };

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FC } from "react";
 
 import styles from "./AeroFlot.module.scss";
 
@@ -7,7 +7,7 @@ interface AeroFlotTypes {
   children?: React.ReactNode;
 }
 
-const AeroFlot = ({ children, src }: AeroFlotTypes) => {
+const AeroFlot: FC<AeroFlotTypes> = ({ children, src }) => {
   return (
     <div className={styles.aerocont}>
       <img

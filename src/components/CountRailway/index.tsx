@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FC } from "react";
 
 import styles from "./CountRaileay.module.scss";
 
@@ -16,7 +16,7 @@ interface CountRaileayTypes {
   discountHandler?: (e: any) => void;
 }
 
-const CountRaileay = ({
+const CountRaileay: FC<CountRaileayTypes> = ({
   kmValue,
   optionKG,
   kgOption,
@@ -28,7 +28,7 @@ const CountRaileay = ({
   discountValue,
   discountHandler,
   kgInfoCountPricees,
-}: CountRaileayTypes) => {
+}) => {
   return (
     <div className={styles.count}>
       <label className={styles.count__kmlabel} id="1km">

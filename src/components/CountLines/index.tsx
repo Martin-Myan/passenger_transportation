@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FC } from "react";
 
 import styles from "./CountLines.module.scss";
 
@@ -16,7 +16,7 @@ interface CountLinesTypes {
   discountHandler?: (e: any) => void;
 }
 
-const CountLines = ({
+const CountLines: FC<CountLinesTypes> = ({
   kgClick,
   kmValue,
   optionKG,
@@ -27,7 +27,7 @@ const CountLines = ({
   optionKGInfo,
   discountValue,
   discountHandler,
-}: CountLinesTypes) => {
+}) => {
   return (
     <div className={styles.count}>
       <label className={styles.count__kmlabel} id="1km">

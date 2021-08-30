@@ -27,7 +27,7 @@ const CountRailwayStructure = () => {
     const kilometrPrice = e.target.value;
     setKmEconomValue(kilometrPrice);
   };
-  const kgHandler = (e: any) => {
+  const kgHandler = (e: ChangeEvent<{ value: any }>) => {
     setKgValue(e.target.value.trim());
   };
 
