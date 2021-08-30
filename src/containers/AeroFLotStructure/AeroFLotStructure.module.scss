@@ -1,0 +1,12 @@
+.aero_container {
+  padding: 0 25px;
+
+  &__price_km {
+    font-size: 20px;
+  }
+
+  &__global_price {
+    font-size: 25px;
+    font-weight: bold;
+  }
+}

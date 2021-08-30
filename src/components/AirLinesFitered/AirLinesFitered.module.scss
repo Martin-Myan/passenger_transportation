@@ -1,0 +1,42 @@
+.filtered {
+  width: 100%;
+  display: flex;
+  max-width: 500px;
+  align-items: center;
+  justify-content: space-between;
+
+  button {
+    width: 33.3%;
+    display: flex;
+    padding: 15px 0;
+    font-size: 12px;
+    color: #4a4a4a;
+    font-weight: 600;
+    line-height: 20px;
+    font-style: normal;
+    text-align: center;
+    align-items: center;
+    letter-spacing: 0.5px;
+    background: #ffffff;
+    box-sizing: border-box;
+    font-family: Open Sans;
+    justify-content: center;
+    text-transform: uppercase;
+    border: 1px solid #dfe5ec;
+  }
+
+  :first-child {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+  }
+
+  :last-child {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+
+  &__active {
+    color: white !important;
+    background: #2196f3 !important;
+  }
+}

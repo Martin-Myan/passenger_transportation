@@ -1,0 +1,51 @@
+.count {
+  padding: 25px;
+
+  &__kmlabel {
+    display: flex;
+    margin-bottom: 15px;
+    align-items: center;
+    justify-content: space-between;
+
+    &__inp {
+      padding: 3px 5px;
+      border-radius: 5px;
+      font-size: 18px;
+      border: 1px solid grey;
+    }
+  }
+
+  &__btn_block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    justify-content: space-between;
+
+    &_btn {
+      padding: 5px;
+      font-size: 18px;
+      border-radius: 5px;
+      background-color: aqua;
+      border: 1px solid grey;
+    }
+  }
+
+  &__discount {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &_inp {
+      width: 70px;
+      font-size: 18px;
+      padding: 3px 5px;
+      border-radius: 5px;
+      border: 1px solid grey;
+    }
+  }
+
+  &__option_kg {
+    margin-top: 15px;
+    font-weight: bold;
+  }
+}

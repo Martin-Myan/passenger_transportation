@@ -1,0 +1,10 @@
+.aerocont {
+  border: 2px solid grey;
+  max-width: 520px;
+  border-radius: 8px;
+  padding: 8px 5px;
+
+  &__logo {
+    display: block;
+  }
+}
